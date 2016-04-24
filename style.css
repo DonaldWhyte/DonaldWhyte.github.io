@@ -1,0 +1,231 @@
+* {
+  margin:0;
+  padding:0
+}
+
+html {
+  background-color:#444;
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+body {
+  max-width:550px;
+  display:block;
+  margin:0 auto;position: relative;
+  height:100%;
+}
+
+ul {
+  list-style:none;
+  padding:0;
+  text-align:center;
+}
+
+li {
+  display:inline-block;
+}
+
+#profile {
+  width:120px;
+}
+
+#else {
+  right:0;
+  padding:0 2.5%;
+}
+
+#else, #profile {
+  position:absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon--twitter::before {
+  content:"\f309"
+}
+
+.social_icon--twitter {
+  background-color: #32b9e7;
+}
+.social_icon--twitter:hover {
+  background-color: #2a9dc4;
+}
+
+.icon--github::before {
+  content:"\f30c"
+}
+
+.social_icon--facebook {
+  background-color: #4b70ab;
+}
+.social_icon--facebook:hover {
+  background-color: #3f5f91;
+}
+
+.icon--linkedin::before {
+  content:"\f318"
+}
+
+.social_icon--linkedin {
+  background-color: #0087be;
+}
+.social_icon--linkedin:hover {
+  background-color: #0072a1;
+}
+
+.icon--skype::before {
+  content:"\f339"
+}
+
+.social_icon--skype {
+  background-color: #00AFF0;
+}
+.social_icon--skype:hover {
+  background-color: #0094cc;
+}
+
+.icon--github::before {
+  content:"\f300"
+}
+
+.social_icon--github {
+  background-color: #333333;
+}
+.social_icon--github:hover {
+  background-color: #2b2b2b;
+}
+
+.icon--email::before {
+  content:"\2709"
+}
+
+.social_icon--email {
+  background-color: #E40001;
+}
+.social_icon--email:hover {
+  background-color: #C70304;
+}
+
+.social_item {
+  display: inline-block;
+  margin-right: 0.1em;
+}
+
+.icon--devpost {
+  width:22px;
+  height:22px;
+}
+
+.icon--devpost::before {
+  position:relative;
+  top:1px;
+  content:url('devpost.svg');
+}
+
+.social_icon--devpost {
+  background-color:#003e54;
+}
+
+.social_icon--devpost:hover {
+  background-color:#012f40;
+}
+
+
+.social_icon--instagram {
+  background-color:#125688;
+}
+
+.social_icon--instagram:hover {
+  background-color: #0D4065;
+}
+
+.icon--instagram::before {
+  content:"\f32d"
+}
+
+.icon, [class^="icon--"] {
+  font-family: 'entypo';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.social_icon, [class^="social_icon"] {
+  font-size: 1.4em;
+  color: white;
+  text-decoration: none;
+  border-radius: 100%;
+  width: 2.2em;
+  height: 2.2em;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+    -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.social_container {
+  text-align:center;
+}
+
+.m {
+  font-size:3em;
+  width:100%;
+  text-align:center;
+  margin-bottom:0.5em;
+  font-family:sans-serif;
+  color: white;
+  text-shadow: 2px 2px 0 #333;
+}
+
+#profile {
+  margin-bottom:1em;
+}
+
+@media (max-width:400px) {
+  .icon--devpost {
+    width:19px;
+    height:19px;
+  }
+
+  .social_icon, [class^="social_icon"] {
+    font-size:1.2em;
+  }
+  .m {
+    font-size:2em;
+  }
+}
+@media (max-width:460px){
+  .mobile {
+    display:block;
+    clear:both;
+  }
+  body {
+    width:90%;
+    margin:0 5%;
+  }
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+#profile img {
+  width: 200px;
+}
