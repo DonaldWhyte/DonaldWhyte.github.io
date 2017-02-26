@@ -17,7 +17,7 @@
 }
 
 .big-icons i {
-    font-size: 64px;
+    font-size: 42px;
 }
 
 .action-btn {
@@ -29,4 +29,12 @@
         margin: 0 auto;
         margin-bottom: 15px;
     }
+}
+
+.brand-logo {
+    -webkit-border-radius: 128px;
+    -moz-border-radius: 128px;
+    -ms-border-radius: 128px;
+    -o-border-radius: 128px;
+    border-radius: 128px;
 }
