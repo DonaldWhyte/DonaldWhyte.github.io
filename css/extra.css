@@ -31,10 +31,30 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .useful-links {
+        display: none;
+    }
+}
+
 .brand-logo {
     -webkit-border-radius: 128px;
     -moz-border-radius: 128px;
     -ms-border-radius: 128px;
     -o-border-radius: 128px;
     border-radius: 128px;
+}
+
+.portfolio-list li {
+    color: #939da5;
+    margin-bottom: 8px;
+}
+
+.portfolio-list li a {
+    color: #606a82;
+    font-weight: bold;
+}
+
+.portfolio-list li a:hover {
+    color: red;
 }
