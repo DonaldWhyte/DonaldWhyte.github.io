@@ -58,3 +58,15 @@
 .portfolio-list li a:hover {
     color: red;
 }
+
+.project-description ul {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-left: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.project-description li span {
+    margin-left: -16px;
+}
