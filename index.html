@@ -358,7 +358,15 @@
 
   <script>
   $(document).ready(function() {
-    $(".project-description").hide();
+    const EXPAND_CHAR = '▼';
+    const COLLAPSE_CHAR = '▲';
+
+    $('.project-description').hide(
+      );
+    $('a[id^="project-"]').each(function() {
+      const expand_link = $(this).text() + ' ' + EXPAND_CHAR;
+      console.log($(this).text(expand_link));
+    });
 
     const PROJECTS = ['bb-redis', 'bb-security', 'ibm', 'bt', 'research']
     const TOGGLE_SPEED_MS = 400;
@@ -366,6 +374,16 @@
       const selector = '#project-' + PROJECTS[index];
       $(selector).click(function() {
         $(this).siblings().toggle(TOGGLE_SPEED_MS);
+
+        var new_last_char = null;
+        const last_char = $(this).text()[$(this).text().length - 1];
+        if (last_char === EXPAND_CHAR) {
+          new_last_char = COLLAPSE_CHAR;
+        } else {
+          new_last_char = EXPAND_CHAR;
+        }
+        $(this).text($(this).text().slice(0, -1) + new_last_char);
+
         return false;
       });
     }
