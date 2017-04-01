@@ -272,8 +272,7 @@ section.header .content {
   align-items: center;
 }
 section.header .container .logo {
-  max-width: 100px;
-  margin-left: -2em;
+  max-width: 80px;
   margin-right: 2em !important;
   border-radius: 128px;
 }
