@@ -1,4 +1,4 @@
-baseurl = "http://blog.donsoft.io/"
+baseurl = "http://donsoft.io/blog"
 theme = "cocoa-eh"
 builddrafts = true
 canonifyurls = true
