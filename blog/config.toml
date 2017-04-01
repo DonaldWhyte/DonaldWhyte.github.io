@@ -15,7 +15,7 @@ pluralizelisttitles = false
 blog = "blog/:slug/"
 
 [params]
-dateform = "Jan 2, 2006"
+dateform = "Jan 02, 2006"
 dateformfull = "Mon Jan 2 2006 UTC"
 description = "TODO"
 copyright = "Copyright © 2017 Donald Whyte"
