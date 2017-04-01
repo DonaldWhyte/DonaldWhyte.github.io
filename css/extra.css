@@ -70,3 +70,24 @@
 .project-description li span {
     margin-left: -16px;
 }
+
+.call-to-action {
+    font-size: 18px;
+    color: #555;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.call-to-action a:hover,
+{
+    color: red;
+}
+
+.call-to-action a:active,
+.call-to-action a:visited {
+    color: #555;
+}
+
+.content p strong {
+    color: #555;
+}
