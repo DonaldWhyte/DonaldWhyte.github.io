@@ -91,7 +91,7 @@ $(document).ready(function(){
     /* 2. Action Buttons ................... */
     /* ------------------------------------- */
 
-    $('a#open-more-info').on( "click", function() {
+    $(document).ready(function() {
         $(".overlay").toggleClass("skew-part");
         $("#right-side").toggleClass("hide-right");
         $("#close-more-info").toggleClass("hide-close");
