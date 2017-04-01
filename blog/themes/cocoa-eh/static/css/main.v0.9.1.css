@@ -274,9 +274,10 @@ section.header .content {
 section.header .container .logo {
   max-width: 100px;
   margin-left: -2em;
+  margin-right: 2em !important;
+  border-radius: 128px;
 }
 section.header .name {
-  padding-top: 20px;
   font-size: 28px;
   font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
