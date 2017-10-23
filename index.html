@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Donald Whyte -- Software Engineer</title>
+    <meta name="description" content="Portfolio website and blog of Donald Whyte, a software engineer and web developer. Describes the skills and projects Donald has Whyte has worked on throughout industry and in his spare time.">
+
+    <meta name="author" content="Donald Whyte">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+    <!-- ============== Resources style ============== -->
+    <link rel="stylesheet" href="css/style-agency.css" />
+    <link rel="stylesheet" href="css/extra.css" />
+
+    <!-- Modernizr runs quickly on page load to detect features -->
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body>
+    <!-- Page preloader -->
+    <div id="loading">
+      <div id="preloader">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Overlay and Star effect -->
+    <div class="global-overlay">
+      <!-- Gravity points -->
+      <canvas id="c"></canvas>
+      <div class="overlay light-back skew-part"></div>
+    </div>
+
+    <!-- START - Home/Left Part -->
+    <section id="left-side">
+
+      <img src="img/donald_whyte.jpg" alt="Donald Whyte" class="brand-logo" />
+
+      <div class="content">
+        <h1 class="text-intro opacity-0">
+          Donald Whyte
+        </h1>
+
+        <h2 class="text-intro opacity-0">
+          Developer, data enthusiast, event organiser.
+        </h2>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="https://github.com/DonaldWhyte/" class="action-btn text-intro opacity-0">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="mailto:don@donsoft.io" class="light-btn text-intro opacity-0">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- Social icons -->
+      <div class="useful-links">
+        <a href="https://github.com/DonaldWhyte/" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/donald_whyte" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://uk.linkedin.com/in/donaldwhyte" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+
+    </section>
+    <!-- END - Home/Left Part -->
+
+    <!-- START - More Informations/Right Part -->
+    <section id="right-side" class="hide-right">
+
+      <div class="content">
+        <h3>What I Do</h3>
+
+        <p>
+          I'm a software engineer that focuses on <strong>distributed systems</strong>
+          and <strong>data science</strong>. Having a passion for programming
+          since I was young, I have been developing software for over nine years.
+        </p>
+        <br />
+        <p>
+          In addition to programming, I <strong>deliver technical events
+          and workshops</strong>. I've organised 6 hackathons, mentored at
+          another 11 and delivered dozens of workshops.
+        </p>
+        <br />
+        <p>
+          Get in touch at
+          <a href="mailto:don@donsoft.io" class="call-to-action">don@donsoft.io</a>
+          if you're interested in your company or event receiving <strong>
+          consulation, talks or workshops</strong> related to distributed
+          systems or data science.
+        </p>
+
+        <span class="separator"></span>
+
+        <h3>Events and Talks</h3>
+        <ul class="portfolio-list">
+          <li><a href="http://donaldwhyte.github.io/deep-learning-with-rnns">Talk: Deep Learning with Recurrent Neural Networks</a></li>
+          <li><a href="http://donaldwhyte.github.io/deep-learning-with-rnns/workshop">Workshop: Generating English Novels with Recurrent Networks</a></li>
+          <li><a href="http://donaldwhyte.github.io/intro-to-ml/automated">Talk: Intro to Automated Machine Learning</a></li>
+          <li><a href="http://donaldwhyte.github.io/intro-to-deeplearning">Talk: Intro to Deep Learning</a></li>
+          <li><a href="http://donaldwhyte.github.io/isomorphic-react-workshop">Talk: Building Isomorphic Web Apps with React</a></li>
+          <li><a href="http://donaldwhyte.github.io/how-to-build-and-ship-an-mvp-in-24-hours/">Talk: How to Build and Ship an MVP in 24 Hours</a></li>
+          <li><a href="http://donaldwhyte.github.io/gmock-presentation/">Talk: Introduction to Google Mock</a></li>
+          <li><a href="https://goo.gl/0lBqAy">Hackathon: StartupBus UK 2016</a></li>
+          <li><a href="https://goo.gl/munpTE">Hackathon: StartupBus New York 2016</a></li>
+          <li><a href="http://egypt.hackamena.com/">Hackathon: Hack4Egypt 2015 and 2016</a></li>
+          <li><a href="http://expoinnovationchallenge.com/">Hackathon: EXPO Innovation Challenge</a></li>
+        </ul>
+
+        <span class="separator"></span>
+
+        <h3>Notable Projects</h3>
+        <ul class="portfolio-list">
+          <li>
+            <a href="#" id="project-bb-redis">
+              <strong>[Bloomberg L.P.] Redis as a Service</strong>
+            </a>
+            <div class="project-description">
+              <ul>
+                <li>
+                  <span>
+                    highly available clustered
+                    <a href="https://redis.io/topics/introduction">
+                      <strong>Redis</strong>
+                    </a>
+                    service
+                  </span>
+                </li>
+                <li><span>runs in multiple data centres</span></li>
+                <li><span>used by numerous Bloomberg products</span></li>
+                <li><span>caching TBs of data</span></li>
+                <li><span>run instances on physical or virtual machines</span></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" id="project-bb-security">
+              <strong>[Bloomberg L.P.] Security and Session Management</strong>
+            </a>
+            <div class="project-description">
+              <ul>
+                <li><span>secure, highly available user session management</span></li>
+                <li><span>powers the <a href="https://www.bloomberg.com/professional/">Bloomberg Professional Service</a></span></li>
+                <li><span>100% uptime due to its critical nature</span></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" id="project-ibm">
+              [IBM] Smarter Software Service</strong>
+            </a>
+            <div class="project-description">
+              <ul>
+                <li><span>cost-effective software maintenance platform for IBM customers</span></li>
+                <li><span>two of IBMs largest software products on-boarded</span></li>
+                <li><span>
+                  <a href="http://www-03.ibm.com/software/products/en/ibm-mq">IBM MQ</a>
+                  and <a href="https://www-01.ibm.com/software/data/enterprise-application-servers/cics/">IBM CICS</a>
+                </span></li>
+                <li><span>customers get recommendations on software patches</span></li>
+                <li><span>automatically, tailored to how they use the products</span></li>
+                <li><span>backed by static code analysis and machine learning</span></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" id="project-bt">
+              <strong>[BT Security] Realtime Network Virus Detection</strong>
+            </a>
+            <div class="project-description">
+              <ul>
+                <li><span>realtime machine learning</span></li>
+                <li><span>to detect malicious code in network streams</span></li>
+                <li>
+                  <span>
+                    developed an
+                    <a href="https://en.wikipedia.org/wiki/Intrusion_detection_system">
+                      <strong>Instrusion Detection System (IDS)</strong>
+                    </a>
+                  </span>
+                </li>
+                <li><span>with 98% virus detection accuracy</span></li>
+              </ul>
+            </div>
+          <li>
+            <a href="#" id="project-research">
+              <strong>[Research] High-Dimensional Search</strong>
+            </a>
+            <div class="project-description">
+              <ul>
+                <li>
+                  <span>
+                    researched methods to accelerate
+                    <a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">
+                      high-dimensional search
+                    </a>
+                  </span>
+                </li>
+                <li><span>high-D search is a widely used technique</span></li>
+                <li><span>in machine learning, search engines and scientific visualisation</span></li>
+                <li>
+                  <span>
+                    developed new search technique -- the
+                    <a href="https://github.com/DonaldWhyte/mdsearch/blob/master/include/multigrid.hpp">
+                      <strong>Multigrid Tree</strong>
+                    </a>
+                  </span>
+                </li>
+                <li><span><a href="https://goo.gl/5YSuCd">paper available here</a></span></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <span class="separator"></span>
+
+        <h3>Get in touch!</h3>
+
+        <!-- Social icons -->
+        <div class="big-icons">
+          <a href="https://github.com/DonaldWhyte/" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/donald_whyte" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://uk.linkedin.com/in/donaldwhyte" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- /. Content -->
+
+      <footer>
+        <p>© Donald Whyte 2017</p>
+      </footer>
+
+    </section>
+    <!-- START - More Informations/Right Part -->
+
+    <!-- Button Cross to close the More Informations/Right Part -->
+    <button id="close-more-info" class="hide-close"><i class="icon ion-ios-close-outline"></i></button>
+
+    <!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe.
+        It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /. Root element of PhotoSwipe. Must have class pswp. -->
+
+  <!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+  <!-- ********** Resources jQuery ********** -->
+  <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+  <!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easings.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Accelerated JavaScript animation JS file -->
+  <script src="js/velocity.min.js"></script>
+
+  <!-- Accelerated JavaScript animation UI JS file -->
+  <script src="js/velocity.ui.min.js"></script>
+
+  <!-- Newsletter plugin -->
+  <script src="js/notifyMe.js"></script>
+
+  <!-- Contact form plugin -->
+  <script src="js/contact-me.js"></script>
+
+  <!-- Slideshow/Image plugin -->
+  <script src="js/gravity.js"></script>
+
+  <!-- Scroll plugin -->
+  <script src="js/jquery.mousewheel.js"></script>
+
+  <!-- Custom Scrollbar plugin -->
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+
+  <!-- Popup Newsletter Form -->
+  <script src="js/classie.js"></script>
+  <script src="js/dialogFx.js"></script>
+
+  <!-- PhotoSwipe Core JS file -->
+  <script src="js/photoswipe.js"></script>
+
+  <!-- PhotoSwipe UI JS file -->
+  <script src="js/photoswipe-ui-default.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+  <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+  <script>
+  $(document).ready(function() {
+    const EXPAND_CHAR = '▼';
+    const COLLAPSE_CHAR = '▲';
+
+    $('.project-description').hide(
+      );
+    $('a[id^="project-"]').each(function() {
+      const expand_link = $(this).text() + ' ' + EXPAND_CHAR;
+      console.log($(this).text(expand_link));
+    });
+
+    const PROJECTS = ['bb-redis', 'bb-security', 'ibm', 'bt', 'research']
+    const TOGGLE_SPEED_MS = 400;
+    for (var index in PROJECTS) {
+      const selector = '#project-' + PROJECTS[index];
+      $(selector).click(function() {
+        $(this).siblings().toggle(TOGGLE_SPEED_MS);
+
+        var new_last_char = null;
+        const last_char = $(this).text()[$(this).text().length - 1];
+        if (last_char === EXPAND_CHAR) {
+          new_last_char = COLLAPSE_CHAR;
+        } else {
+          new_last_char = EXPAND_CHAR;
+        }
+        $(this).text($(this).text().slice(0, -1) + new_last_char);
+
+        return false;
+      });
+    }
+  });
+  </script>
+
+  </body>
+</html>
