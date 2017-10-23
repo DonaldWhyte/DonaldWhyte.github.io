@@ -272,11 +272,11 @@ section.header .content {
   align-items: center;
 }
 section.header .container .logo {
-  max-width: 100px;
-  margin-left: -2em;
+  max-width: 80px;
+  margin-right: 2em !important;
+  border-radius: 128px;
 }
 section.header .name {
-  padding-top: 20px;
   font-size: 28px;
   font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
@@ -582,19 +582,17 @@ section.main .container .content .post-item {
   align-items: center;
   display: list-item;
   list-style: disc inside;
+  font-size: 18px;
 }
 section.main .container .content .post-item .meta {
-  font-size: 14px;
   color: #666666;
   display: none;
   min-width: 100px;
+  margin-right: 1em;
 }
 section.main .container .content .see-more {
   font-style: italic;
-  float: right;
-  font-size: 0.9em;
-  margin-top: 2em;
-  color: #313537;
+  font-size: 20px;
 }
 section.main .container .content .see-more:hover {
   color: #666;

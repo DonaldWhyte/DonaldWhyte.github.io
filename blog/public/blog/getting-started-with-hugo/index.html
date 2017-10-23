@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="TODO">
+
+
+    <meta property="twitter:site" content="@donald_whyte">
+
+<meta property="twitter:title" content="Getting Started with Hugo">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="http://donsoft.io/blogimg/banner.png">
+
+<meta property="twitter:description" content="">
+
+<title>
+
+
+     Don&#39;s Thoughts - Getting Started with Hugo 
+
+</title>
+<link rel="canonical" href="http://donsoft.io/blog/blog/getting-started-with-hugo/">
+
+
+<link rel="stylesheet" href="http://donsoft.io/blogcss/main.v0.9.1.css">
+<link rel="stylesheet" href="http://donsoft.io/blogcss/ionicons.min.css">
+
+
+  <link rel="stylesheet" href="http://donsoft.io/blogcss/highlight.min.css">
+
+
+
+  <link rel="stylesheet" href="http://donsoft.io/blogcss/progressively.min.css">
+
+
+
+
+
+<link rel="shortcut icon"
+
+    href="http://donsoft.io/blog/img/favicon.png"
+
+>
+
+
+
+
+</head>
+
+
+<body>
+
+
+<section class="header">
+
+    <div class="container">
+        <a href="http://donsoft.io/blog"><img class="logo" src="http://donsoft.io/blog/img/logo.jpg" alt="logo" /></a>
+        <div class="content">
+            <a href="http://donsoft.io/blog"><div class="name"><h1>Don&#39;s Thoughts</h1></div></a>
+            <nav>
+                <ul>
+                    
+                        <a href="http://donsoft.io/blogblog/"><li>Blog</li></a>
+                    
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                    
+                    <a href="https://github.com/DonaldWhyte/"><li>Code</li></a>
+                    <a href="http://donsoft.io"><li>About</li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Getting Started with Hugo
+
+</div>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title="Wed Apr 2 2014 UTC">Apr 02, 2014</div>
+                    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+    
+    
+
+<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+
+<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
+appropriate version for your os and architecture.</p>
+
+<p>Save it somewhere specific as we will be using it in the next step.</p>
+
+<p>More complete instructions are available at <a href="http://donsoft.io/blog/overview/installing/">installing hugo</a></p>
+
+<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+
+<p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.</p>
+
+<p>Follow the following steps:</p>
+
+<ol>
+<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
+<li>Go into the repo</li>
+<li>Run hugo in server mode and build the docs</li>
+<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
+</ol>
+
+<p>Corresponding pseudo commands:</p>
+
+<pre><code>git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Press ctrl+c to stop
+</code></pre>
+
+<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+
+<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
+
+<p>Stop the Hugo process by hitting ctrl+c.</p>
+
+<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+
+<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Press ctrl+c to stop
+</code></pre>
+
+<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+
+<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+<code>docs/content/overview/quickstart.md</code>.</p>
+
+<p>Change and save this file.. Notice what happened in your terminal.</p>
+
+<pre><code>&gt; Change detected, rebuilding site
+
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 26 ms
+</code></pre>
+
+<p>Refresh the browser and observe that the typo is now fixed.</p>
+
+<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+
+<h2 id="step-4-have-fun">Step 4. Have fun</h2>
+
+<p>The best way to learn something is to play with it.</p>
+
+
+                <br>
+                <p><a href="http://donsoft.io/blog/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'donsoft-blog';
+    var disqus_identifier = 'http:\/\/donsoft.io\/blog\/blog\/getting-started-with-hugo\/';
+    var disqus_title = 'Getting Started with Hugo';
+    var disqus_url = 'http:\/\/donsoft.io\/blog\/blog\/getting-started-with-hugo\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <div class="copyright">
+
+        
+            <a href="http://donsoft.io/bloglicense">Copyright © 2017 Donald Whyte</a>
+        
+
+        </div>
+        <div class="icons">
+
+        
+            <a href="https://github.com/DonaldWhyte" target="_blank">
+                <i class="icon ion-social-github" title="github"></i>
+            </a>
+        
+
+        
+            <a href="https://twitter.com/donald_whyte" target="_blank">
+                <i class="icon ion-social-twitter" title="twitter"></i>
+            </a>
+        
+
+        
+            <a href="https://www.linkedin.com/in/donaldwhyte" target="_blank">
+                <i class="icon ion-social-linkedin" title="linkedin"></i>
+            </a>
+        
+
+        
+            <a href="mailto:don@donsoft.io">
+                <i class="icon ion-ios-email larger" title="email"></i>
+            </a>
+        
+
+        
+            <a href="http://donsoft.io/blog/index.xml">
+                <i class="icon ion-social-rss larger" title="rss"></i>
+            </a>
+        
+
+        </div>
+    </div>
+</section>
+
+
+  <script src="http://donsoft.io/blogjs/highlight.min.js" defer></script>
+  
+
+
+
+  <script src="http://donsoft.io/blogjs/progressively.min.js" defer></script>
+
+
+<script>
+  window.onload = function() {
+    
+      hljs.initHighlighting();
+    
+    
+      progressively.init({delay: 30, throttle: 50});
+    
+  };
+</script>
+
+</body>
+</html>
+
